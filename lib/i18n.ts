@@ -4,13 +4,13 @@ export const defaultLocale: Locale = "pt";
 
 export const messages = {
   pt: {
-    masthead: "Caderno de oficina",
+    masthead: "Caderno de luz",
     brand: "Vidi Notes",
-    tagline: "Notas de código, fotografia e ofício.",
-    heroKicker: "Caderno aberto",
-    heroTitle: "Escrever como se desenvolve: com intenção e revisão.",
+    tagline: "Notas de fotografia, enquadramento e ofício.",
+    heroKicker: "Obturador aberto",
+    heroTitle: "Fotografar é decidir o que fica de fora.",
     heroLead:
-      "Uma plataforma de blog em Next.js e MDX, com tags, categorias, SEO, RSS e comentários. Paleta do ividi.dev.",
+      "Um caderno de notas sobre luz, recorte, sequência e o quarto escuro. Escrito em PT e EN, na paleta do ividi.dev.",
     readJournal: "Ler o caderno",
     latest: "Últimas notas",
     allPosts: "Todas as notas",
@@ -34,13 +34,13 @@ export const messages = {
     syntaxNote: "Blocos de código com destaque de sintaxe.",
   },
   en: {
-    masthead: "Workshop journal",
+    masthead: "Light journal",
     brand: "Vidi Notes",
-    tagline: "Notes on code, photography and craft.",
-    heroKicker: "Open notebook",
-    heroTitle: "Write the way you ship: with intent and revision.",
+    tagline: "Notes on photography, framing and craft.",
+    heroKicker: "Shutter open",
+    heroTitle: "To photograph is to decide what stays out.",
     heroLead:
-      "A Next.js and MDX blogging platform with tags, categories, SEO, RSS and comments. Palette from ividi.dev.",
+      "A journal on light, crop, sequence and the darkroom. Written in PT and EN, in the ividi.dev palette.",
     readJournal: "Read the journal",
     latest: "Latest notes",
     allPosts: "All notes",

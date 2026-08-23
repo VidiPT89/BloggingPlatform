@@ -1,0 +1,20 @@
+---
+title: Naming the contact sheet
+excerpt: An archive that cannot be found is a box of lost days. The caption starts in the filename.
+date: "2026-08-20"
+category: Archive
+tags: ["archive", "workflow", "caption"]
+---
+
+A contact sheet is a map, not a gallery. You scan for the gesture that repeats, then you keep the frame where the gesture breaks.
+
+I name files so a future me can find a city and a year without opening the folder.
+
+```js
+function contactName({ city, date, roll, frame }) {
+  const day = date.toISOString().slice(0, 10);
+  return `${day}_${city}_r${roll}_f${String(frame).padStart(2, "0")}.jpg`;
+}
+```
+
+The caption comes later. The name is the first caption. If that line is lazy, the photograph disappears inside your own hard drive.

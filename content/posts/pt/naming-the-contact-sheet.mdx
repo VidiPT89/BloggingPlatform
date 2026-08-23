@@ -1,0 +1,20 @@
+---
+title: Dar nome à folha de contactos
+excerpt: Um arquivo que não se encontra é uma caixa de dias perdidos. A legenda começa no nome do ficheiro.
+date: "2026-08-20"
+category: Arquivo
+tags: ["arquivo", "fluxo", "legenda"]
+---
+
+Uma folha de contactos é um mapa, não uma galeria. Procuras o gesto que se repete e ficas com o quadro em que o gesto parte.
+
+Nomeio os ficheiros para um eu futuro encontrar a cidade e o ano sem abrir a pasta.
+
+```js
+function contactName({ city, date, roll, frame }) {
+  const day = date.toISOString().slice(0, 10);
+  return `${day}_${city}_r${roll}_f${String(frame).padStart(2, "0")}.jpg`;
+}
+```
+
+A legenda vem depois. O nome é a primeira legenda. Se essa linha for preguiçosa, a fotografia desaparece dentro do teu próprio disco.
