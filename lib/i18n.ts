@@ -1,0 +1,68 @@
+export type Locale = "pt" | "en";
+
+export const defaultLocale: Locale = "pt";
+
+export const messages = {
+  pt: {
+    masthead: "Caderno de oficina",
+    brand: "Vidi Notes",
+    tagline: "Notas de código, fotografia e ofício.",
+    heroKicker: "Caderno aberto",
+    heroTitle: "Escrever como se desenvolve: com intenção e revisão.",
+    heroLead:
+      "Uma plataforma de blog em Next.js e MDX, com tags, categorias, SEO, RSS e comentários. Paleta do ividi.dev.",
+    readJournal: "Ler o caderno",
+    latest: "Últimas notas",
+    allPosts: "Todas as notas",
+    featured: "Em destaque",
+    minutes: "min de leitura",
+    tags: "Tags",
+    categories: "Categorias",
+    category: "Categoria",
+    related: "Continuar a ler",
+    comments: "Conversa",
+    commentsHint: "Os comentários usam Giscus (GitHub Discussions).",
+    commentsOff: "Comentários por configurar. Vê o README para ligar o Giscus.",
+    rss: "RSS",
+    home: "Início",
+    back: "Voltar ao caderno",
+    footerCredit: "Developed by David Arsénio Martins",
+    language: "Idioma",
+    emptyTag: "Ainda não há notas com esta tag.",
+    emptyCategory: "Ainda não há notas nesta categoria.",
+    published: "Publicado",
+    syntaxNote: "Blocos de código com destaque de sintaxe.",
+  },
+  en: {
+    masthead: "Workshop journal",
+    brand: "Vidi Notes",
+    tagline: "Notes on code, photography and craft.",
+    heroKicker: "Open notebook",
+    heroTitle: "Write the way you ship: with intent and revision.",
+    heroLead:
+      "A Next.js and MDX blogging platform with tags, categories, SEO, RSS and comments. Palette from ividi.dev.",
+    readJournal: "Read the journal",
+    latest: "Latest notes",
+    allPosts: "All notes",
+    featured: "Featured",
+    minutes: "min read",
+    tags: "Tags",
+    categories: "Categories",
+    category: "Category",
+    related: "Keep reading",
+    comments: "Conversation",
+    commentsHint: "Comments run on Giscus (GitHub Discussions).",
+    commentsOff: "Comments are not configured yet. See the README to enable Giscus.",
+    rss: "RSS",
+    home: "Home",
+    back: "Back to the journal",
+    footerCredit: "Developed by David Arsénio Martins",
+    language: "Language",
+    emptyTag: "No notes with this tag yet.",
+    emptyCategory: "No notes in this category yet.",
+    published: "Published",
+    syntaxNote: "Code blocks with syntax highlighting.",
+  },
+} as const;
+
+export type MessageKey = keyof (typeof messages)["en"];

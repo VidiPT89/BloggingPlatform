@@ -1,0 +1,20 @@
+---
+title: ISR para uma tipografia pequena
+excerpt: O Incremental Static Regeneration mantém um caderno pessoal rápido sem transformar cada edição num rebuild completo.
+date: "2026-08-16"
+category: Engenharia
+tags: ["nextjs", "isr", "desempenho"]
+featured: true
+---
+
+Um blog pessoal não precisa de uma sala de guerra de CDN. Precisa de páginas que pareçam impressas e que se reimprimam em silêncio quando uma nota muda.
+
+O ISR do Next.js faz isso com uma janela de `revalidate`. O primeiro leitor depois dessa janela recebe a página nova. Os outros leem da cache.
+
+```ts
+export const revalidate = 3600;
+```
+
+Essa constante é o horário da tipografia. As notas ficam estáticas. A prateleira continua a actualizar.
+
+Se publicas MDX a partir do disco, mantém a pasta de conteúdo ao lado da app e trata cada ficheiro como uma chapa: um slug, um idioma, uma data.

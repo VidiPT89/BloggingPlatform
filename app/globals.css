@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #070707;
+  --color-ink: #f4efe6;
+  --color-ember: #ff7a00;
+  --color-amber: #ffaa00;
+  --color-paper: #14110e;
+  --color-line: #2a241c;
+}
+
+html,
+body {
+  background: var(--color-void);
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-sans), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.ember-field {
+  background:
+    radial-gradient(900px 420px at 12% -10%, rgba(255, 122, 0, 0.18), transparent 55%),
+    radial-gradient(700px 360px at 90% 0%, rgba(255, 170, 0, 0.1), transparent 50%),
+    var(--color-void);
+}
+
+.grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: 0.09;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.rise {
+  animation: rise 0.7s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
+
+[data-rehype-pretty-code-figure] pre {
+  background: transparent;
+}

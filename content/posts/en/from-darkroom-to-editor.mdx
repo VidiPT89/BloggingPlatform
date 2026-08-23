@@ -1,0 +1,25 @@
+---
+title: From the darkroom to the editor
+excerpt: Sixteen years of photojournalism left a habit of looking twice. That habit now lives in TypeScript.
+date: "2026-08-12"
+category: Craft
+tags: ["career", "photography", "writing"]
+featured: true
+---
+
+I used to wait for the image to appear in the tray. Now I wait for the type checker. The room changed. The patience did not.
+
+A good frame is a decision about what to leave out. A good pull request is the same decision, only the crop is a function and the grain is a test.
+
+```ts
+type Frame = {
+  subject: string;
+  leftover: string[];
+};
+
+function crop(frame: Frame) {
+  return frame.subject;
+}
+```
+
+This journal is where those two rooms meet: light, sequence, and a headline that earns its place.
