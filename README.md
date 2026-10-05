@@ -2,6 +2,8 @@
 
 > A bilingual MDX journal with Incremental Static Regeneration, tags, categories, dynamic Open Graph images, RSS and Giscus comments, painted in the ividi.dev palette (black, burnt orange, amber).
 
+[![CI](https://github.com/VidiPT89/BloggingPlatform/actions/workflows/ci.yml/badge.svg)](https://github.com/VidiPT89/BloggingPlatform/actions/workflows/ci.yml)
+
 Vidi Notes is a Next.js App Router press desk. Each note lives as an MDX file, ships with syntax highlighting, and is rebuilt on a one-hour ISR window. The UI is European Portuguese / English, with a language toggle remembered in `localStorage`.
 
 ## ✨ Main Features
