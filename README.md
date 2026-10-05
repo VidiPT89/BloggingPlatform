@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/VidiPT89/BloggingPlatform/actions/workflows/ci.yml/badge.svg)](https://github.com/VidiPT89/BloggingPlatform/actions/workflows/ci.yml)
 
-**🌐 Live demo:** [blogging-platform-beryl-mu.vercel.app](https://blogging-platform-beryl-mu.vercel.app) · The full journal in Portuguese and English, with the RSS feeds.
+**🌐 Live demo:** [vidi-notes.ividi.dev](https://vidi-notes.ividi.dev) · The full journal in Portuguese and English, with the RSS feeds.
 
 Vidi Notes is a Next.js App Router press desk. Each note lives as an MDX file, ships with syntax highlighting, and is rebuilt on a one-hour ISR window. The UI is European Portuguese / English, with a language toggle remembered in `localStorage`.
 
